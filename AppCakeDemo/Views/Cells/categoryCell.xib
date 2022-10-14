@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FontsFree-Net-SFCompactDisplay-Bold.ttf">
+            <string>SFCompactDisplay-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="categoryCell" reuseIdentifier="categoryCell" id="gTV-IL-0wX" customClass="categoryCell" customModule="AppCakeDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="162" height="35"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="162" height="35"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wx8-TI-0Xr">
+                        <rect key="frame" x="0.0" y="0.0" width="162" height="35"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GJ7-ib-XQY" userLabel="backView" customClass="RoundedView" customModule="AppCakeDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="162" height="35"/>
+                                <color key="backgroundColor" red="0.26666666666666666" green="0.72549019607843135" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="topLeft" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="topRight" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLeft" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomRight" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="gmy-Th-7wy" userLabel="topview" customClass="RoundedView" customModule="AppCakeDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="162" height="31"/>
+                                <color key="backgroundColor" red="0.1764705882352941" green="0.7803921568627451" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="topLeft" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="topRight" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLeft" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomRight" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chara" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="na8-j4-PVq">
+                                <rect key="frame" x="12" y="7" width="138" height="21.5"/>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Bold" family="SF Compact Display" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="GJ7-ib-XQY" secondAttribute="trailing" id="8ni-lJ-eDu"/>
+                            <constraint firstAttribute="bottom" secondItem="gmy-Th-7wy" secondAttribute="bottom" constant="4" id="Gwc-cE-FaT"/>
+                            <constraint firstItem="gmy-Th-7wy" firstAttribute="leading" secondItem="Wx8-TI-0Xr" secondAttribute="leading" id="JxJ-rf-cC4"/>
+                            <constraint firstAttribute="trailing" secondItem="na8-j4-PVq" secondAttribute="trailing" constant="12" id="NYy-XH-3ev"/>
+                            <constraint firstItem="gmy-Th-7wy" firstAttribute="top" secondItem="Wx8-TI-0Xr" secondAttribute="top" id="Qo3-GL-IDS"/>
+                            <constraint firstItem="GJ7-ib-XQY" firstAttribute="leading" secondItem="Wx8-TI-0Xr" secondAttribute="leading" id="Vt9-HH-vAs"/>
+                            <constraint firstAttribute="bottom" secondItem="GJ7-ib-XQY" secondAttribute="bottom" id="YTd-xS-Yew"/>
+                            <constraint firstItem="na8-j4-PVq" firstAttribute="centerX" secondItem="Wx8-TI-0Xr" secondAttribute="centerX" id="diA-Tx-Oq6"/>
+                            <constraint firstItem="na8-j4-PVq" firstAttribute="leading" secondItem="Wx8-TI-0Xr" secondAttribute="leading" constant="12" id="m2x-m9-6Kx"/>
+                            <constraint firstItem="GJ7-ib-XQY" firstAttribute="top" secondItem="Wx8-TI-0Xr" secondAttribute="top" id="nmb-VW-XP2"/>
+                            <constraint firstAttribute="trailing" secondItem="gmy-Th-7wy" secondAttribute="trailing" id="owO-cG-zWI"/>
+                            <constraint firstItem="na8-j4-PVq" firstAttribute="centerY" secondItem="Wx8-TI-0Xr" secondAttribute="centerY" id="zxJ-Dp-4VI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Wx8-TI-0Xr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Gws-O4-Jch"/>
+                <constraint firstItem="Wx8-TI-0Xr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Qjq-nS-7UK"/>
+                <constraint firstAttribute="trailing" secondItem="Wx8-TI-0Xr" secondAttribute="trailing" id="kEx-6T-Hab"/>
+                <constraint firstAttribute="bottom" secondItem="Wx8-TI-0Xr" secondAttribute="bottom" id="pKm-L1-3Lp"/>
+            </constraints>
+            <size key="customSize" width="162" height="70"/>
+            <connections>
+                <outlet property="backView" destination="GJ7-ib-XQY" id="RxL-p5-rmA"/>
+                <outlet property="lbl_title" destination="na8-j4-PVq" id="Uxc-Vp-tkJ"/>
+                <outlet property="topView" destination="gmy-Th-7wy" id="NN9-yd-UY5"/>
+            </connections>
+            <point key="canvasLocation" x="217.39130434782609" y="88.058035714285708"/>
+        </collectionViewCell>
+    </objects>
+</document>
